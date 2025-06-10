@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
-import ApperIcon from '../components/ApperIcon';
+import ApperIcon from '@/components/ApperIcon';
+import Button from '@/components/atoms/Button';
 
-function NotFound() {
+function NotFoundPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white">
       <motion.div
@@ -18,30 +19,26 @@ function NotFound() {
         >
           <ApperIcon name="Search" className="w-20 h-20 text-surface-300 mx-auto" />
         </motion.div>
-        
+
         <h1 className="font-heading font-bold text-4xl text-gray-900 mb-4">
           Page Not Found
         </h1>
-        
+
         <p className="text-gray-600 mb-8 max-w-md mx-auto">
           The page you're looking for doesn't exist. Let's get you back to organizing your tasks.
         </p>
-        
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+
+        <Button
+          as={NavLink} // Use as prop to render NavLink internally
+          to="/"
+          className="inline-flex items-center gap-2"
         >
-          <NavLink
-            to="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors"
-          >
-            <ApperIcon name="ArrowLeft" size={20} />
-            Back to Tasks
-          </NavLink>
-        </motion.div>
+          <ApperIcon name="ArrowLeft" size={20} />
+          Back to Tasks
+        </Button>
       </motion.div>
     </div>
   );
 }
 
-export default NotFound;
+export default NotFoundPage;
