@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Review quarterly sales report",
+    "description": "Analyze Q3 performance metrics and prepare executive summary",
+    "priority": "high",
+    "categoryId": "work",
+    "dueDate": "2024-01-15",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-10T09:00:00Z",
+    "order": 0
+  },
+  {
+    "id": "2",
+    "title": "Update project timeline",
+    "description": "Adjust milestones based on client feedback from yesterday's meeting",
+    "priority": "medium",
+    "categoryId": "work",
+    "dueDate": "2024-01-16",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-10T10:30:00Z",
+    "order": 1
+  },
+  {
+    "id": "3",
+    "title": "Schedule annual physical exam",
+    "description": "Call Dr. Smith's office to book checkup appointment",
+    "priority": "medium",
+    "categoryId": "health",
+    "dueDate": "2024-01-20",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-10T14:15:00Z",
+    "order": 2
+  },
+  {
+    "id": "4",
+    "title": "Plan weekend hiking trip",
+    "description": "Research trails, check weather forecast, and pack gear",
+    "priority": "low",
+    "categoryId": "personal",
+    "dueDate": "2024-01-18",
+    "completed": false,
+    "completedAt": null,
+    "createdAt": "2024-01-11T16:45:00Z",
+    "order": 3
+  },
+  {
+    "id": "5",
+    "title": "Complete online training module",
+    "description": "Finish the cybersecurity awareness course by end of week",
+    "priority": "high",
+    "categoryId": "work",
+    "dueDate": "2024-01-17",
+    "completed": true,
+    "completedAt": "2024-01-12T11:20:00Z",
+    "createdAt": "2024-01-08T13:00:00Z",
+    "order": 4
+  }
+]

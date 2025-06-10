@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import react-toastify CSS */
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Ensure scrollbars are visible */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+/* Main content areas must allow scroll */
+.main-content {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@layer utilities {
+  /* Only use scrollbar-hide for specific UI elements, never main content */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Keyboard shortcuts overlay */
+.keyboard-shortcuts {
+  backdrop-filter: blur(4px);
+}
+
+/* Custom focus styles for accessibility */
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.1);
+  border-color: #5B21B6;
+}
+
+/* Priority indicator borders */
+.priority-high {
+  border-left: 3px solid #EF4444;
+}
+
+.priority-medium {
+  border-left: 3px solid #F59E0B;
+}
+
+.priority-low {
+  border-left: 3px solid #10B981;
+}
+
+/* Drag and drop styles */
+.dragging {
+  opacity: 0.5;
+  transform: rotate(5deg);
+}
+
+.drop-zone {
+  background-color: rgba(91, 33, 182, 0.05);
+  border: 2px dashed #5B21B6;
+}
